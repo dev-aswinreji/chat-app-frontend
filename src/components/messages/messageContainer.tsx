@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { TiMessages } from "react-icons/ti";
 import useConversation from "../../zustand/useConversation";
 import MessageInput from "./messageInput";
@@ -11,11 +10,7 @@ interface MessageContainerProps {
 const MessageContainer = ({ mobileView }: MessageContainerProps) => {
   const { selectedConversation, setSelectedConversation } = useConversation();
 
-//   useEffect(() => {
-//     return () => {
-//       setSelectedConversation(null);
-//     };
-//   }, [setSelectedConversation]);
+// e selected conversation is not reset automatically// 
 
   return (
     <div className="flex flex-col h-full min-h-0 w-full md:w-2/3 bg-gray-200">
