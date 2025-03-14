@@ -7,7 +7,9 @@ const Home = () => {
     const { setSelectedConversation, selectedConversation } = useConversation();
 
     useEffect(() => {
-        setSelectedConversation(null);
+        return () => {
+            setSelectedConversation(null);
+        }
     }, [setSelectedConversation]);
 
     return (
