@@ -11,11 +11,11 @@ const MessageContainer = ({ mobileView }: MessageContainerProps) => {
     const { selectedConversation, setSelectedConversation } = useConversation();
 
     return (
-        <div className="flex flex-col h-full min-h-0 w-full md:w-2/3 bg-gray-200">
+        <div className="flex flex-col h-full min-h-0 w-full md:w-2/3">
             {selectedConversation ? (
                 <>
                     {/* Header with back button in mobile view */}
-                    <div className="bg-slate-500 px-4 py-2 border-b border-gray-300 flex items-center justify-around">
+                    <div className="bg-slate-500 px-4 py-2 border-b  flex items-center justify-around">
                         {mobileView && (
                             <button
                                 onClick={() => setSelectedConversation(null)}
